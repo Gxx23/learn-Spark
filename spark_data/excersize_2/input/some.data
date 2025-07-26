@@ -1,0 +1,5 @@
+{"id":1,"name":"zs","sources":[{"id":1,"name":"java","score":80.00},{"id":2,"name":"python","score":90.00},{"id":3,"name":"hive","score":85.00}]}
+{"id":2,"name":"ls","sources":[{"id":1,"name":"spark","score":83.00},{"id":2,"name":"flink","score":95.00},{"id":3,"name":"hbase","score":90.00}]}
+{"id":3,"name":"ww","sources":[{"id":1,"name":"java","score":81.00},{"id":2,"name":"kafka","score":93.00},{"id":3,"name":"hbase","score":85.00}]}
+{"id":4,"name":"zl","sources":[{"id":1,"name":"java","score":86.00},{"id":2,"name":"python","score":99.00},{"id":3,"name":"hive","score":90.00}]}
+{"id":5,"name":"tq","sources":[{"id":1,"name":"java","score":88.00},{"id":2,"name":"flume","score":91.00},{"id":3,"name":"hbase","score":85.00}]}

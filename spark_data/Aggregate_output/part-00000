@@ -1,0 +1,8 @@
+spark=> 1, 83.0
+hive=> 2, 175.0
+flume=> 1, 91.0
+python=> 2, 189.0
+flink=> 1, 95.0
+java=> 4, 335.0
+kafka=> 1, 93.0
+hbase=> 3, 260.0
