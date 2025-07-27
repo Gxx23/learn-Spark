@@ -24,10 +24,10 @@ public class _02_GroupByKey {
         JavaPairRDD<String, Integer> pairRdd = sc.parallelizePairs(datas);
         //缓存pairRdd
         pairRdd.cache();
-        //groupByKey() => 只分组，不聚合
-        //pairRdd.groupByKey().collect().forEach(System.out::println);
-        pairRdd.reduceByKey(Math::max).collect().forEach(System.out::println);
-        pairRdd.reduceByKey(Integer::sum).collect().forEach(System.out::println);
+        // groupByKey() => 只分组，不聚合
+//        pairRdd.groupByKey().collect().forEach(System.out::println);
+//        pairRdd.reduceByKey(Math::max).collect().forEach(System.out::println);
+//        pairRdd.reduceByKey(Integer::sum).collect().forEach(System.out::println);
         //求最大值，最小值，总和
         pairRdd.mapValues(v -> Tuple3.apply(v, v, v))
                 .foldByKey(new Tuple3<>(Integer.MIN_VALUE, Integer.MAX_VALUE, 0), (acc, value) ->
