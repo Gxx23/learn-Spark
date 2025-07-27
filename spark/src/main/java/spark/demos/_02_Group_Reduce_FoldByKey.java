@@ -6,12 +6,10 @@ import org.apache.spark.api.java.JavaSparkContext;
 import scala.Tuple2;
 import scala.Tuple3;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
-public class _02_GroupByKey {
+public class _02_Group_Reduce_FoldByKey {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf();
         conf.setAppName("xer5");
