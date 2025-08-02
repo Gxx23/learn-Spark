@@ -7,6 +7,7 @@ import scala.Tuple2;
 import scala.Tuple3;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class _02_Group_Reduce_FoldByKey {
@@ -20,6 +21,7 @@ public class _02_Group_Reduce_FoldByKey {
                 Tuple2.apply("spark", 1), Tuple2.apply("hive", 7), Tuple2.apply("hive", 4), Tuple2.apply("spark", 8),
                 Tuple2.apply("spark", 3), Tuple2.apply("hbase", 2), Tuple2.apply("hbase", 6), Tuple2.apply("spark", 5));
         JavaPairRDD<String, Integer> pairRdd = sc.parallelizePairs(datas);
+        //pairRdd.sortByKey();
         //缓存pairRdd
         pairRdd.cache();
         // groupByKey() => 只分组，不聚合

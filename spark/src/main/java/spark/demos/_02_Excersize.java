@@ -74,7 +74,6 @@ public class _02_Excersize {
                 return result.iterator();
             }
         });
-
         rdd2.saveAsTextFile("./spark_data/excersize_2/output");
         sc.stop();
     }

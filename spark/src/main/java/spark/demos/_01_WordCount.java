@@ -56,8 +56,8 @@ public class _01_WordCount {
                 return integer + integer2;
             }
         });
-
-        JavaRDD<String> formatres = rdd4.map(tuple -> tuple._1() + ": " + tuple._2());
+        JavaPairRDD<String, Integer> resultRdd = rdd4.sortByKey();
+        JavaRDD<String> formatres = resultRdd.map(tuple -> tuple._1() + ": " + tuple._2());
         //行动算子，触发计算任务真正执行
         //formatres.collect().forEach(System.out::println);
         formatres.saveAsTextFile("./spark_data/wordcount/output");
